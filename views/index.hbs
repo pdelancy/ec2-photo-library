@@ -1,0 +1,10 @@
+<h1>WELCOME TO YOUR PHOTOS!</h1>
+{{#each photos}}
+  <img src={{location}} alt="">
+{{/each}}
+
+<form enctype="multipart/form-data" action="/photo" method="post">
+  <!-- Your form goes here. -->
+  <input type="file" value="" name="photo">
+  <input type="submit" name="" value="Submit">
+</form>
