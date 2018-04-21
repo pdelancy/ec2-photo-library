@@ -22,8 +22,9 @@ const multer = require('multer');
 const multerS3 = require('multer-s3');
 const aws = require('aws-sdk');
 
+console.log(aws);
 const s3 = new aws.S3();
-
+console.log(s3);
 const storage = multerS3({
   contentType: multerS3.AUTO_CONTENT_TYPE,
   s3: s3,
